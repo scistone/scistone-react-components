@@ -1,0 +1,97 @@
+.main-page{
+    display: block;
+    background-color: $color-secondary;
+    min-height: 100vh;
+}
+
+.navigation-bar{
+    display: flex;
+    width: 100%;
+    top:0;
+    z-index: 99;
+    height: 80px;
+    background-color: $color-primary;
+}
+.navigation-bar--logo{
+    display: flex;
+    width: 15%;
+    color: $color-text;
+    text-align: center;
+    margin: auto;
+    img {
+        height: 50px;
+        margin: 0 10px;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 700;
+        margin: auto;
+        margin-left: 0;
+    }
+}
+
+.navigation-bar--items{
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    height: 80px;
+    .navigation-bar--item{
+        height: 80px;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        display:inline-block;
+        .navigation-bar--item-label {
+            margin-top: 30px;
+            min-width: 100px;
+            color: $color-text;
+            font-size: 16px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            border-bottom:1px solid transparent ;
+        }
+        .navigation-bar--item-animation{
+            position: absolute;
+            display:block;
+            left: 0;
+            top:90%;
+            margin:0 auto;
+            height: 2px;
+            background-color: $color-contrast;
+            width: 0%;
+            transition: width 1s ease;
+        }
+    }
+    .navigation-bar--item:hover .navigation-bar--item-animation{
+        width: 100%;
+    }
+    // p:hover {
+    //     color: $color-contrast;
+    //     border-bottom:1px solid $color-contrast ;
+
+    // }
+    
+}
+
+.navigation-bar--extra{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    .navigation-bar--extra-icon-body{
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        .navigation-bar--extra-icon{
+            height: 24px;
+            color: $color-text;
+            font-weight: 400;
+        }
+        &:hover {
+            .navigation-bar--extra-icon{
+                color: $color-contrast;
+            }
+        }
+    }
+
+}

@@ -1,4 +1,4 @@
-import { BaseContainer } from './BaseContainer';
+import { BaseContainer } from './components/BaseContainer';
 
 function App() {
   return (
