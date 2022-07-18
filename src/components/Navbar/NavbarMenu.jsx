@@ -1,6 +1,6 @@
 import React from 'react';
 
-import menuData from "../data/menu_data.json"
+import menuData from "../../data/menu_data.json"
 
 export const NavbarMenu = () => {
     return(

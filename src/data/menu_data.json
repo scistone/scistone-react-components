@@ -1,10 +1,31 @@
 {
     "menu_data": [
         "Product Cards",
-        "Product Listing",
+        "Product Detail",
         "Embed Video",
         "Carousels",
         "Extra",
         "Contact Us"
-    ]
+    ],
+    "hamburger_menu_data":{
+        "Product Cards": [
+            "Main Product Card",
+            "Product Card Hidden Buttons"
+        ],
+        "Product Detail": [
+            "Main Product Detail"
+        ],
+        "Embed Video": [
+            "Iphone",
+            "Android"
+        ],
+        "Carousels": [
+            "Image Carousel",
+            "Product Carousel"
+        ],
+        "Extra": [
+            "Vertical Product Suggestions"
+        ],
+        "Contact Us":[]
+    }
 }

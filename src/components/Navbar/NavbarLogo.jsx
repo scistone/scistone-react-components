@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/scistone_logo.png'
+import logo from '../../images/scistone_logo.png'
 
 
 export const NavbarLogo = () => {

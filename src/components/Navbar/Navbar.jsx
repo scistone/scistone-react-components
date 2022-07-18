@@ -4,7 +4,7 @@ import {NavbarIcons} from './NavbarIcons'
 import {NavbarLogo} from './NavbarLogo'
 import {NavbarMenu} from './NavbarMenu'
 
-export const BaseContainer = () => {
+export const Navbar = () => {
     return(
         <div className='navigation-bar'>
             <NavbarLogo/>
