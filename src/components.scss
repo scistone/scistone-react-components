@@ -1,3 +1,4 @@
+@import "./variables.scss";
 .main-page{
     display: block;
     background-color: #282c34;
@@ -10,5 +11,42 @@
     top:0;
     z-index: 99;
     height: 80px;
-    background-color: white;
+    background-color: black;
+}
+.navigation-bar--logo{
+    display: flex;
+    width: 15%;
+    color: $color-text;
+    text-align: center;
+    margin: auto;
+    img {
+        height: 50px;
+        margin: 0 10px;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 700;
+        margin: auto;
+        margin-left: 0;
+    }
+}
+
+.navigation-bar--items{
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+    p {
+        margin: auto;
+        color: $color-text;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+    }
+    p:hover {
+        color: $color-contrast;
+    }
+}
+
+.navigation-bar--extra{
+    width: 20%;
 }
