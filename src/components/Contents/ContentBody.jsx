@@ -17,7 +17,7 @@ export const ContentBody = ({title}) => {
         <div className='content-body'>
             <div className='content-body-contents'>
                 <h1>{title}</h1>
-                <ContactUs/>
+                {components[title]}
             </div>
         </div>
     );
