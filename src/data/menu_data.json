@@ -1,19 +1,17 @@
 {
     "menu_data": [
         "Product Cards",
-        "Product Detail",
         "Embed Video",
         "Carousels",
+        "Buttons",
         "Extra",
         "Contact Us"
     ],
     "hamburger_menu_data":{
         "Product Cards": [
             "Main Product Card",
+            "Main Product Detail",
             "Product Card Hidden Buttons"
-        ],
-        "Product Detail": [
-            "Main Product Detail"
         ],
         "Embed Video": [
             "Iphone",
@@ -22,6 +20,9 @@
         "Carousels": [
             "Image Carousel",
             "Product Carousel"
+        ],
+        "Buttons": [
+            "Animated Switch Button"
         ],
         "Extra": [
             "Vertical Product Suggestions"

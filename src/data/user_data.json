@@ -1,0 +1,50 @@
+{
+    "users": [
+        {
+            "name":"Berk Cohadar",
+            "email":"berkcohadar1@gmail.com",
+            "location":"Seattle, WA, US",
+            "linkedin":"https://www.linkedin.com/in/cohadarberk",
+            "github":"https://github.com/berkcohadar",
+            "picture":"https://media-exp2.licdn.com/dms/image/C4D03AQEhtVmUxfl-GA/profile-displayphoto-shrink_200_200/0/1604228643199?e=1663804800&v=beta&t=tJSueAZVRwxBu-WyByo7KNkquVOP27oQYIqfhgXXP1I",
+            "title":"Full Stack Developer"
+        },
+        {
+            "name":"Ahmet Deger",
+            "email":"ahmetdeger@gmail.com",
+            "location":"Austin, TX, US",
+            "linkedin":"https://www.linkedin.com/in/ahmetdeger/",
+            "github":"https://github.com/degerahmet",
+            "picture":"https://media-exp2.licdn.com/dms/image/C4D03AQFFFbQ4ht4HIQ/profile-displayphoto-shrink_200_200/0/1630941320977?e=1663804800&v=beta&t=Da0LlCAeTecn200WtGAkv-6PfWNrqwxmZS3AekWM5Mk",
+            "title":"Full Stack Developer"
+        },
+        {
+            "name":"Aleyna Ceylan",
+            "email":"aleynaceylan.ac@gmail.com",
+            "location":"Seattle, WA, US",
+            "linkedin":"https://www.linkedin.com/in/aleynaceylan/",
+            "github":"https://github.com/aceylan19",
+            "picture":"https://avatars.githubusercontent.com/u/54588536?v=4",
+            "title":"Front End Developer"
+        },
+        {
+            "name":"Alaz Kalelioglu",
+            "email":"alazkalelioglu@gmail.com",
+            "location":"Austin, TX, US",
+            "linkedin":"https://www.linkedin.com/in/alazkalelioglu/",
+            "github":"https://github.com/orgs/Akaleli1",
+            "picture":"https://avatars.githubusercontent.com/u/54588534?v=4",
+            "title":"Front End Developer"
+        },
+        {
+            "name":"Mehmet Ali Acar",
+            "email":"mehmetacar@gmail.com",
+            "location":"Istanbul, Turkey",
+            "linkedin":"https://www.linkedin.com/in/mehmetaacar/",
+            "github":"https://github.com/mehmetaacar",
+            "picture":"https://media-exp2.licdn.com/dms/image/C4D03AQG7VNfDcQNDjA/profile-displayphoto-shrink_200_200/0/1656582195902?e=1663804800&v=beta&t=x6y_e7tDh5w4Um4iGnUmEhMRSzgYomckCXRUCoEWCaM",
+            "title":"Unity Game Developer"
+        }
+    ]
+}
+
