@@ -1,6 +1,8 @@
 @import "./variables.scss";
 @import "./components.scss";
 @import "./typo.scss";
+@import "../components/Navbar/styles.scss";
+@import "../components/HamburgerMenu/styles.scss";
 
 body {
   margin: 0;
