@@ -59,7 +59,7 @@ export const Drawer = (props) => {
         <div className={`scistone-drawer ${props.visible ? 'drawer__container' : ''}`} >
             <div className='scistone-drawer-mask' onClick={props.onClose}>
             </div>
-            <div className='scistone-drawer-content' >
+            <div className='scistone-drawer-content' style={{width:props.width}} >
                 <div className='scistone-drawer-wrapper-body'>
                     {props.header &&
                         <div className="scistone-drawer-header">
@@ -71,7 +71,7 @@ export const Drawer = (props) => {
                                         <FontAwesomeIcon icon={faX} />
                                     }
                                 </button>
-                                <div className="scistone-drawer-title">{props.headerTitle}</div>
+                                <div className="scistone-drawer-title"><h2>{props.title}</h2></div>
                             </div>
                         </div>
                     }

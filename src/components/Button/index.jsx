@@ -5,6 +5,7 @@ export default function Button(props) {
   return (
     <button 
         onClick={props.onClick} 
+        style={props.style}
         className={
             'scistone-btn ' + 
             (props.size ? props.size : '') + 

@@ -10,17 +10,17 @@ export default class Navbar extends Component {
     static Logo = NavLogo;
     static Icons = NavIcons;
 
-    navBarStyle = {
-        position: this.props.style.position,
-        height: this.props.style.height,
-        color: this.props.style.color,
-        backgroundColor: this.props.style.backgroundColor,
-        boxShadow: this.props.style.boxShadow
-    };
+    // navBarStyle = {
+    //     position: this.props.style.position,
+    //     height: this.props.style.height,
+    //     color: this.props.style.color,
+    //     backgroundColor: this.props.style.backgroundColor,
+    //     boxShadow: this.props.style.boxShadow
+    // };
     render() {
     return(
     <div 
-        style = { this.navBarStyle }
+        style = { this.props.style }
         className = 'navigation-bar'
             >
 

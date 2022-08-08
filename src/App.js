@@ -27,21 +27,20 @@ function App() {
   const onClose = () => {
     setVisible(false);
   };
+  
   return (
     <div className="App">
       <header className="App-header">
       
         <Navbar
-          style={{ backgroundColor: 'black' }}
+        
         >
-
           <Navbar.Logo logo={logo} title='Scistone' alt='scistone-logo' />
-
           <Navbar.Items >
-            <Navbar.Item lineColor='white' title='Design' />
-            <Navbar.Item title='Docs' />
-            <Navbar.Item title='Components' />
-            <Navbar.Item title='Resources' />
+            <Navbar.Item  lineColor='white' title='Design' />
+            <Navbar.Item  title='Docs' />
+            <Navbar.Item  title='Components' />
+            <Navbar.Item  title='Resources' />
           </Navbar.Items> 
           {/* 
             <Navbar.Item lineColor='white' title='Design' />
@@ -55,20 +54,17 @@ function App() {
       </header>
       <Button  
           size='md'
-          type='primary'
           onClick={showDrawer} >
           Add to Cart
         </Button>
-          <Drawer header={true} onClose={onClose} visible={visible}>
+          <Drawer title={'Drawer'} header={true} onClose={onClose} visible={visible}>
             <div style={{display:'flex', flexDirection:'column'}}>
-
               <Navbar.Item titleColor='black' title='Design' url='design/'/>
               <Navbar.Item titleColor='black' title='Docs' />
               <Navbar.Item titleColor='black' title='Components' />
               <Navbar.Item titleColor='black' title='Resources' />
+              {/* <p></p> */}
             </div>
-          
-
           </Drawer>
 
     </div>
