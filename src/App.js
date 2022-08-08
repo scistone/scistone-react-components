@@ -1,6 +1,6 @@
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { useState } from 'react';
-import { Button, Drawer, Navbar } from './components';
+import { Button, Container, Drawer, Navbar } from './components';
 
 import logo from './images/scistone_logo.png';
 
@@ -52,7 +52,31 @@ function App() {
           <Navbar.Icons icons={contactIcons} />
         </Navbar>
       </header>
+      <Container col>
+      <Container row>
+
       <Button  
+          size='md'
+          onClick={showDrawer} >
+          Add to Cart
+        </Button>
+        <Button  
+          size='md'
+          onClick={showDrawer} >
+          Add to Cart
+        </Button>
+        <Button  
+          size='md'
+          onClick={showDrawer} >
+          Add to Cart
+        </Button>
+      </Container>
+        <Button  
+          size='md'
+          onClick={showDrawer} >
+          Add to Cart
+        </Button>
+        <Button  
           size='md'
           onClick={showDrawer} >
           Add to Cart
@@ -67,6 +91,7 @@ function App() {
             </div>
           </Drawer>
 
+      </Container>
     </div>
   );
 }

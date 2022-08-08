@@ -1,0 +1,14 @@
+.scistone-container{
+    display: block;
+    margin: 0;
+    padding: 10px;
+
+    &.col{
+        display: flex;
+        flex-direction: column;
+    }
+    &.row{
+        display: flex;
+        flex-direction: row;
+    }
+}
