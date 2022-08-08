@@ -8,6 +8,7 @@
     height: 80px;
     background-color: $color-primary;
     box-shadow: $soft-shadow;
+    color: $color-text;
 }
 .navigation-bar--logo{
     display: flex;
@@ -44,15 +45,13 @@
 }
 
 .navigation-bar--item{
-    height: 80px;
-    margin: auto;
-    text-align: center;
     position: relative;
     display:inline-block;
+    color: inherit;
     .navigation-bar--item-label {
         margin-top: 30px;
         min-width: 100px;
-        color: $color-text;
+        color: inherit;
         font-size: 16px;
         font-weight: 500;
         cursor: pointer;
@@ -63,17 +62,21 @@
         position: absolute;
         display:block;
         left: 0;
-        top:90%;
         margin:0 auto;
         height: 2px;
         background-color: $color-contrast;
         width: 0%;
+        opacity: 0;
         transition: width 1s ease;
+    }
+    a{
+        text-decoration: none;
     }
 }
 
 .navigation-bar--item:hover .navigation-bar--item-animation{
     width: 100%;
+    opacity: 1;
 }
 
 .navigation-bar--extra{

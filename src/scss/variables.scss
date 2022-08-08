@@ -1,7 +1,10 @@
-$color-primary: #222831;
+$color-primary: #000003;
 $color-secondary: #393E46;
-$color-contrast: #FFD369;
+$color-contrast: #FFBA00;
 $color-text: #EEEEEE;
+
+$color-contrast-darker : darken($color-contrast, 10%);
+$color-contrast-lighter : lighten($color-contrast, 5%);
 
 $main-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 $soft-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
