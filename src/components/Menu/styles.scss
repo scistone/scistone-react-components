@@ -1,0 +1,65 @@
+.menu__body-area{
+    padding: 20px 40px;
+    min-width: 200px;
+    max-width: fit-content;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+.menu__body{
+    padding: 10px;
+    position: relative;
+
+}
+
+.menu__title-area{
+    cursor: pointer;
+    padding-left: 5px;
+
+    border-bottom: 3px solid rgba(0,0,0,0);
+    transition: border 0.15s;
+
+    &:hover {
+        border-bottom: 3px solid rgba(0,0,0,1);
+    }
+}
+
+.menu__title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.menu__subitems{
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    width: 100%;
+    opacity: 1;
+    max-height: fit-content;
+    transition: all .3s ease-in;
+
+    &.drawer{
+        transition: all .1s ease-out;
+        max-height: 0;
+        opacity: 0;
+    }
+
+}
+
+.menu__sub-body{
+    cursor: pointer;
+    margin-top: 15px;
+    padding: 0 5px;
+
+    border-bottom: 3px solid rgba(0,0,0,0);
+    transition: border 0.15s;
+
+    &:hover {
+        border-bottom: 3px solid rgba(0,0,0,1);
+    }
+}
+
+.menu__sub-title{
+    font-size: 16px;
+    font-weight: 500;
+}
