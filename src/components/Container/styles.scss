@@ -1,0 +1,35 @@
+.scistone-container {
+    display: block;
+    margin: 0;
+    padding: 20px;
+
+    &.col {
+        position: relative;
+        width: 100%;
+
+    }
+
+    &.col-12 {
+        display: block;
+        flex: 1;
+    }
+
+    &.col-8 {
+        display: block;
+        flex: 0.333333;
+
+    }
+
+    &.col-6 {
+        display: block;
+        flex: 0.25;
+
+
+    }
+
+    &.row {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 0;
+    }
+}
