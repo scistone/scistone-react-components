@@ -6,31 +6,23 @@
     &.col {
         position: relative;
         width: 100%;
-        background-color: purple;
-        border-right: 1px solid black;
 
     }
 
     &.col-12 {
         display: block;
         flex: 1;
-        background-color: aqua;
-        border-right: 1px solid black;
     }
 
     &.col-8 {
         display: block;
         flex: 0.333333;
-        background-color: blueviolet;
-        border-right: 1px solid black;
 
     }
 
     &.col-6 {
         display: block;
         flex: 0.25;
-        background-color: coral;
-        border-right: 1px solid black;
 
 
     }
