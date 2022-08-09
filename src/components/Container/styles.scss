@@ -1,14 +1,43 @@
-.scistone-container{
+.scistone-container {
     display: block;
     margin: 0;
-    padding: 10px;
+    padding: 20px;
 
-    &.col{
-        display: flex;
-        flex-direction: column;
+    &.col {
+        position: relative;
+        width: 100%;
+        background-color: purple;
+        border-right: 1px solid black;
+
     }
-    &.row{
+
+    &.col-12 {
+        display: block;
+        flex: 1;
+        background-color: aqua;
+        border-right: 1px solid black;
+    }
+
+    &.col-8 {
+        display: block;
+        flex: 0.333333;
+        background-color: blueviolet;
+        border-right: 1px solid black;
+
+    }
+
+    &.col-6 {
+        display: block;
+        flex: 0.25;
+        background-color: coral;
+        border-right: 1px solid black;
+
+
+    }
+
+    &.row {
         display: flex;
-        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: 0;
     }
 }
