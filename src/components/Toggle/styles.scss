@@ -1,0 +1,65 @@
+#menuToggle
+ {
+   display: block;
+   position: relative;
+   top: 30px;
+   left: 50px;
+   
+   z-index: 1;
+   
+   -webkit-user-select: none;
+   user-select: none;
+   
+ }
+ 
+
+ 
+ #menuToggle input
+ {
+   display: block;
+   width: 40px;
+   height: 32px;
+   position: absolute;
+   top: -7px;
+   left: -5px;
+   
+   cursor: pointer;
+   
+   opacity: 0; 
+   z-index: 2; 
+   
+   -webkit-touch-callout: none;
+
+   
+    &:hover{
+      color: $color-contrast;
+    }
+   
+
+   
+ }
+
+ #menuToggle span
+ {
+   display: block;
+   width: 33px;
+   height: 4px;
+   margin-bottom: 5px;
+   position: relative;
+   
+   background: #fff;
+   border-radius: 3px;
+   
+   z-index: 1;
+   
+   transform-origin: 4px 0px;
+   
+   transition: transform .5s cubic-bezier(0.77,0.2,0.05,1.0),
+               background .5s cubic-bezier(0.77,0.2,0.05,1.0),
+               opacity .5s ease-in-out;
+
+ }
+
+#menuToggle:hover .primary-span{
+  background: $color-contrast;
+}
