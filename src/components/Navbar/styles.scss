@@ -9,6 +9,7 @@
     background-color: $color-primary;
     box-shadow: $soft-shadow;
     color: $color-text;
+    align-items: center;
 }
 .navigation-bar--logo{
     display: flex;
@@ -17,6 +18,7 @@
     text-align: center;
     margin: auto;
     cursor: pointer;
+    padding: 10px;
 
     img {
         height: 40px;
@@ -33,14 +35,19 @@
 .navigation-bar--items{
     display: flex;
     width: 65%;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-align: center;
     height: 80px;
+    margin: auto;
     
     // p:hover {
     //     color: $color-contrast;
     //     border-bottom:1px solid $color-contrast ;
 
     // }
+    @media screen and ( max-width: 760px ) {
+        display: none;
+    }
     
 }
 
@@ -72,6 +79,7 @@
     a{
         text-decoration: none;
     }
+    
 }
 
 .navigation-bar--item:hover .navigation-bar--item-animation{
@@ -97,6 +105,9 @@
                 color: $color-contrast;
             }
         }
+    }
+    @media screen and ( max-width: 840px ) {
+        display: none;
     }
 
 }

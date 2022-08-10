@@ -1,18 +1,21 @@
 @import "./variables.scss";
 @import "./components.scss";
 @import "./typo.scss";
+@import "./demo.scss";
 @import "../components/Navbar/styles.scss";
 @import "../components/Drawer/styles.scss";
 @import "../components/Button/styles.scss";
 @import "../components/Menu/styles.scss";
 @import "../components/Container/styles.scss";
+@import "../components/Input/styles.scss";
+@import "../components/Toggle/styles.scss";
+@import "../components/Form/styles.scss";
+@import "../components/Form/Item/styles.scss";
 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 

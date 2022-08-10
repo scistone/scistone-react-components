@@ -9,6 +9,7 @@ export default function Container(props) {
         (props.col12 ? 'col-12' : '') +
         (props.col6 ? 'col-6' : '') +
         (props.col8 ? 'col-8' : '') +
+        (props.col16 ? 'col-16' : '') +
         (props.row ? 'row' : '') 
         } >
         {props.children}

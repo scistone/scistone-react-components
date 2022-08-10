@@ -16,7 +16,7 @@
 
     &.col-8 {
         display: block;
-        flex: 0.333333;
+        flex: 0.3333333333333;
 
     }
 
@@ -26,10 +26,14 @@
 
 
     }
+    &.col-16{
+        display: block;
+        flex: 0.6666666667%;
+    }
 
     &.row {
         display: flex;
-        flex-wrap: wrap;
+        flex-flow: wrap;
         min-width: 0;
     }
 }
