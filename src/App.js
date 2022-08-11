@@ -6,7 +6,7 @@ import logo from './images/scistone_logo.png';
 
 const contactIcons = [
   {
-    url: 'https://github.com/scistione',
+    url: 'https://github.com/scistone',
     icon: faGithub
   },
   {
@@ -86,13 +86,13 @@ function App() {
 
         </Navbar>
       </header>
-      <Container style={{textAlign:'center'}}>
-      <Container row>
+      <Container style={{textAlign:'center',padding:'10px'}}>
+      <Container style={{marginBottom:'10px'}} rowSize='md' row>
         <Container col style={{backgroundColor:'#FFBA00'}}>
           Col
         </Container>
       </Container>
-      <Container row>
+      <Container style={{marginBottom:'10px'}} rowSize='md' row>
         <Container col12 style={{backgroundColor:'#FFBA00'}}>
           Col-12
         </Container>
@@ -100,7 +100,7 @@ function App() {
           Col-12
         </Container>
       </Container>
-      <Container row>
+      <Container style={{marginBottom:'10px'}} rowSize='md' row>
         <Container col8 style={{backgroundColor:'#a8dadc'}}>
           Col-8
         </Container>
@@ -111,7 +111,7 @@ function App() {
           Col-8
         </Container>
       </Container>
-      <Container row>
+      <Container style={{marginBottom:'10px'}} rowSize='lg' row>
         <Container col6 style={{backgroundColor:'#a8dadc'}}>
           Col-6
         </Container>
@@ -127,7 +127,7 @@ function App() {
       </Container>
       </Container>
       <Container>
-        <Container row>
+        <Container style={{marginBottom:'10px'}} row>
         
         <Drawer title={'Menu'} header={true} onClose={onClose} visible={visible}>
           <Menu
@@ -138,7 +138,7 @@ function App() {
 
 
         </Container>
-        
+
         <Form>
 
           <Form.Item>
@@ -147,6 +147,17 @@ function App() {
           <Form.Item>
             <Input type='password' placeholder='Password' label='Password' errorMessage='This field is required.' required/>
           </Form.Item>
+          
+          <Form.Item type='button'>
+            <Input type='checkbox' label='Remember me'/>
+          </Form.Item>
+   
+          <Form.Item type='button'>
+              <Button type='primary'>
+                Sign in
+              </Button>
+          </Form.Item>
+
           
         </Form>
 

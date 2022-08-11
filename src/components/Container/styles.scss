@@ -1,7 +1,26 @@
 .scistone-container {
     display: block;
     margin: 0;
-    padding: 20px;
+
+    &.offset-40 {
+        margin-left: 40%;
+    }
+
+    &.offset-50 {
+        margin-left: 50%;
+    }
+
+    &.offset-25 {
+        margin-left: 25%;
+    }
+
+    &.offset-33 {
+        margin-left: 33.333333333%;
+    }
+
+    &.offset-66 {
+        margin-left: 66.666666666%;
+    }
 
     &.col {
         position: relative;
@@ -26,7 +45,8 @@
 
 
     }
-    &.col-16{
+
+    &.col-16 {
         display: block;
         flex: 0.6666666667%;
     }
@@ -35,5 +55,17 @@
         display: flex;
         flex-flow: wrap;
         min-width: 0;
+
+        &.sm {
+            height: 5vh;
+        }
+
+        &.md {
+            height: 10vh;
+        }
+
+        &.lg {
+            height: 20vh;
+        }
     }
 }

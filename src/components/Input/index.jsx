@@ -8,12 +8,13 @@ export default function Input(props) {
   const errorMessage = props.errorMessage;
 
   const [value,setValue] = useState('')
+  const [checkbox,setCheckbox] = useState(false)
   const [error,setError] = useState(false)
   const [counter,setCounter] = useState(0)
   
   useEffect(() => {
     if (counter === 0){
-      setCounter(counter+1)
+      setCounter(c=>c+1)
       return(setError(false))
     }
     if (required && value === ''){
@@ -21,7 +22,7 @@ export default function Input(props) {
     }else{
       setError(false)
     }
-  }, [value])
+  }, [value, required])
   
 
   if (type==='email' || type==='password' || type==='number' || type==='text' || type==='url' ){
@@ -37,6 +38,17 @@ export default function Input(props) {
           <p>{errorMessage}</p>
         }
         </div>
+      </div>
+    )
+  }
+  else if (type==='checkbox' ){
+    return (
+      <div style={props.style} className='scistone-checkbox-input-container'>
+        <span onClick={(e)=>setCheckbox(!checkbox)} className={`checkbox ${checkbox === true ? 'checked' : '' }`} >
+          <div>
+          </div>
+        </span>
+        <label>{label}</label>
       </div>
     )
   }
