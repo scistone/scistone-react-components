@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 export default function Input(props) {
+  const name = props.name;
   const required = props.required;
   const type = props.type;
   const placeholder = props.placeholder;
@@ -33,7 +34,7 @@ export default function Input(props) {
         </div>
 
         <div className='scistone-container col-16 scistone-input-area'>
-        <input onChange={(e)=>setValue(e.target.value)} value={value} type={type} className={`scistone-input ${error === true && 'error'}`} placeholder={placeholder}/>
+        <input name={name} onChange={(e)=>setValue(e.target.value)} value={value} type={type} className={`scistone-input ${error === true && 'error'}`} placeholder={placeholder}/>
         {error === true && 
           <p>{errorMessage}</p>
         }
@@ -43,8 +44,10 @@ export default function Input(props) {
   }
   else if (type==='checkbox' ){
     return (
-      <div style={props.style} className='scistone-checkbox-input-container'>
-        <span onClick={(e)=>setCheckbox(!checkbox)} className={`checkbox ${checkbox === true ? 'checked' : '' }`} >
+      <div onClick={(e)=>setCheckbox(!checkbox)} style={props.style} className='scistone-checkbox-input-container'>
+        <span className={`checkbox ${checkbox === true ? 'checked' : '' }`} >
+        <input readOnly name={name} value={checkbox} className={`checkbox-input`}/>
+
           <div>
           </div>
         </span>

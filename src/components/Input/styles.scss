@@ -7,7 +7,7 @@
         display: inline-flex;
         align-items: center;
         max-width: 100%;
-        height: 32px;
+        height: 37px;
         font-size: 14px;
         color: rgba(0, 0, 0, .85);
         font-size: 14px;
@@ -37,8 +37,9 @@
     height: 32px;
     width: 25.5vw;
     border: rgba(0, 0, 0, 0.158) 0.3px solid;
-    border-radius: 2px;
+    border-radius: 7px;
     padding-left: 10px;
+
     &.error {
         border: red 1px solid;
     }
@@ -74,6 +75,10 @@
     vertical-align: middle;
 }
 
+.checkbox-input{
+    display: none;
+}
+
 .scistone-checkbox-input-container {
     display: flex;
     flex-direction: row;
@@ -89,6 +94,12 @@
         color: rgba(0, 0, 0, .85);
         font-size: 14px;
         margin-left: 5px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 
     .required:before {
@@ -102,9 +113,6 @@
     }
 }
 
-
-
-
 .checkbox {
     border: 1px solid gray;
     border-radius: 4px;
@@ -113,24 +121,19 @@
     display: inline-block;
     position: relative;
 
-    &:hover {
-        -webkit-box-shadow: 0px 0px 4px 1px rgba($color-contrast, 0.64);
-        -moz-box-shadow: 0px 0px 4px 1px rgba($color-contrast, 0.64);
-        box-shadow: 0px 0px 4px 1px rgba($color-contrast, 0.64);
-        border: rgba($color-contrast, 0.64) 1px solid;
-    }
     &.checked {
         -webkit-box-shadow: 0px 0px 4px 1px rgba($color-contrast, 0.64) !important;
         -moz-box-shadow: 0px 0px 4px 1px rgba($color-contrast, 0.64) !important;
         box-shadow: 0px 0px 4px 1px rgba($color-contrast, 0.64) !important;
         outline: rgba($color-contrast, 0.64) 1px solid !important;
-        div{    
+
+        div {
             width: 75%;
             height: 72%;
             margin: 2px 1px 1px 2px;
             background-color: $color-contrast;
             transform: translate(-2%, -2%) scale(1);
-            transition: all 0.2s ;
+            transition: all 0.2s;
             border-radius: 3px;
         }
     }

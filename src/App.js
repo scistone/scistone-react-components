@@ -28,6 +28,11 @@ function App() {
     setVisible(false);
   };
 
+  const onSubmit = (e) =>{
+    e.preventDefault()
+    console.log(e.target.elements.email.value)
+  }
+
   const menuData = [
     {
       label:'Design',
@@ -139,17 +144,19 @@ function App() {
 
         </Container>
 
-        <Form>
+        <Form 
+          onSubmit={onSubmit}
+        >
 
           <Form.Item>
-            <Input type='email' placeholder='E-mail' label='E-mail' errorMessage='This field is required.' required/>
+            <Input name="email" type='email' placeholder='E-mail' label='E-mail' errorMessage='This field is required.' required/>
           </Form.Item>
           <Form.Item>
-            <Input type='password' placeholder='Password' label='Password' errorMessage='This field is required.' required/>
+            <Input name="password" type='password' placeholder='Password' label='Password' errorMessage='This field is required.' required/>
           </Form.Item>
           
           <Form.Item type='button'>
-            <Input type='checkbox' label='Remember me'/>
+            <Input name='remember' type='checkbox' label='Remember me'/>
           </Form.Item>
    
           <Form.Item type='button'>
