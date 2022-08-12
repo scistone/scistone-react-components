@@ -1,0 +1,93 @@
+.home-summary-container {
+    height: '90vh';
+}
+
+.home__summary-col {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 200px 0 100px 0;
+
+    img {
+        width: 20%;
+    }
+
+    h1 {
+        color: white;
+        font-size: 100px;
+    }
+
+    p {
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Lato', sans-serif;
+        font-weight: '500';
+    }
+}
+
+.stone__benefits__cards {
+    margin: auto;
+    width: 70vw;
+    background: rgba(white, 1);
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: $white-shadow;
+    color: rgba($color-primary, 1);
+
+    h2{
+        font-size: 50px;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .stone__benefits__card-row {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding:0 40px 0 40px;
+
+        div {
+            border: 1px solid rgba(128, 128, 128, 0.308);
+            border-radius: 20px;
+            
+            padding: 10px;
+            margin: 20px;
+            box-shadow: $white-shadow;
+            height: 180px;
+            width: 100px;
+
+            svg {
+                padding: 20px;
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 20px;
+                -webkit-touch-callout: none;
+                -webkit-user-select: none;
+                -khtml-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+
+            &:hover {
+                box-shadow: $contrast-shadow;
+                border: 1px solid rgba(#f46b45, 1);
+                transition: all 0.7s;
+
+                svg{
+                    color: rgba(#f46b45, 1);
+                    transition: all 0.5s;
+
+                }
+
+            }
+        }
+    }
+}
+
+#benefits__row-last{
+    padding-bottom: 50px;
+}

@@ -3,7 +3,9 @@ import React from 'react'
 export default function Container(props) {
   return (
     <div style={props.style} 
+        id={props.id}
         className={
+         (`${props.className} `) +
         'scistone-container' + 
         (props.col ? ' col' : '') +
         (props.col12 ? ' col-12' : '') +
@@ -22,7 +24,7 @@ export default function Container(props) {
         (props.offset25 ? ' offset-25' : '') +
         (props.offset33 ? ' offset-33' : '') +
         (props.offset66 ? ' offset-66' : '') 
-        } >
+        }>
         {props.children}
     </div>
   )
