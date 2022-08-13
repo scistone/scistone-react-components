@@ -55,6 +55,10 @@
     position: relative;
     display:inline-block;
     color: inherit;
+    a{
+        color: inherit;
+        
+    }
     .navigation-bar--item-label {
         margin-top: 30px;
         min-width: 100px;

@@ -74,10 +74,9 @@ function Header() {
                 <Navbar.Logo logo={logo} title='Scistone' alt='scistone-logo' />
                 <Navbar.Items >
                     <Navbar.Item lineColor='white' title='Design' />
-                    <Navbar.Item title='Docs' />
-                    <Navbar.Item title='Components' />
-                    <Navbar.Item title='Resources' />
-                    <Navbar.Item title='Resources' />
+                    <Navbar.Item title='Docs' url='docs' />
+                    <Navbar.Item title='Components' url='components' />
+                    <Navbar.Item title='Resources'  url='resources'/>
                 </Navbar.Items>
                 <Navbar.Icons icons={contactIcons} />
 

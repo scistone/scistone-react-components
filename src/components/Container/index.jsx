@@ -5,13 +5,14 @@ export default function Container(props) {
     <div style={props.style} 
         id={props.id}
         className={
-         (`${props.className} `) +
+         (`${props.className ? props.className:''} `) +
         'scistone-container' + 
         (props.col ? ' col' : '') +
         (props.col12 ? ' col-12' : '') +
         (props.col6 ? ' col-6' : '') +
         (props.col8 ? ' col-8' : '') +
         (props.col16 ? ' col-16' : '') +
+        (props.col18 ? ' col-18' : '') +
 
         
         (props.row ? ' row' : '') +
