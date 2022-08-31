@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Open-Source React Components Web App - Source Code
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+We aim to share a bunch of reusable components developed by Stone Developers. This repository contains a source code for a documentation web page that will display all of these React components. An NPM package will be deployed soon.
+
+Stay scientific, fellas.
 
 ## Available Scripts
 
